@@ -6,6 +6,12 @@ Description: Collection of ISO code datasets conveniently packaged for consumpti
   the finRes universe in particular.
 Depends: R (>= 3.4.0)
 Imports: data.table (>= 1.11.4)
+Suggests: 
+  finRes,
+  storethat
+Remotes: 
+  bautheac/finRes,
+  bautheac/storethat
 License: CC0
 Encoding: UTF-8
 LazyData: no
