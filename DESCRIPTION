@@ -2,16 +2,11 @@ Package: fewISOs
 Title: A few ISO code datasets
 Version: 0.0.0.9000
 Authors@R: person("Olivier", "Bauthéac", email = "o.bautheac@gmail.com", role = c("aut", "cre"))
-Description: Collection of ISO code datasets conveniently packaged for consumption in R and 
-  the finRes universe in particular.
+Description: Collection of ISO code datasets conveniently packaged for consumption in R.
 Depends: R (>= 3.4.0)
 Imports: data.table (>= 1.11.4)
-Suggests: 
-  finRes,
-  storethat
-Remotes: 
-  bautheac/finRes,
-  bautheac/storethat
+Suggests: finRes
+Remotes: bautheac/finRes
 License: CC0
 Encoding: UTF-8
 LazyData: no
