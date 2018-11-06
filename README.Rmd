@@ -38,9 +38,9 @@ data(list = c("countries", "currencies", "exchanges"), package = "fewISOs")
 ### countries
 
 The countries dataset corresponds to the ISO 3166-1 sub-standard, part of the ISO 3166 standard published by the International Organization for Standardization (ISO) that defines codes for the names of countries, dependent territories, special areas of geographical interest, and their principal subdivisions (e.g., provinces or states). The sub-standard comes in three sets of country codes, all provided in the dataset:  
-- ISO 3166-1 alpha-2: two-letter country codes (most widely used).  
-- ISO 3166-1 alpha-3: three-letter country codes. Allows for a better visual association between the codes and the country names than the alpha-2 codes.  
-- ISO 3166-1 numeric: three-digit country codes. These are identical to those developed and maintained by the United Nations Statistics Division, with the advantage of script (writing system) independence, and hence useful for people or systems using non-Latin scripts.  
+  - ISO 3166-1 alpha-2: two-letter country codes (most widely used).  
+  - ISO 3166-1 alpha-3: three-letter country codes. Allows for a better visual association between the codes and the country names than the alpha-2 codes.  
+  - ISO 3166-1 numeric: three-digit country codes. These are identical to those developed and maintained by the United Nations Statistics Division, with the advantage of script (writing system) independence, and hence useful for people or systems using non-Latin scripts.  
     
 Dataset excerpt:  
 ```{r `countries`, echo = FALSE}
