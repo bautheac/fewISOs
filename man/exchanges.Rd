@@ -19,7 +19,12 @@
 exchanges
 }
 \description{
-ISO 10383 Market Identification Codes (MIC) for worldwide financial exchanges.
+The Market Identifier Code (MIC) is a unique identification code used to
+  identify securities trading exchanges. I's a four alphanumeric character code, and
+  is defined by the International Organization for Standardization (ISO) in ISO 10383
+  which 'specifies a universal method of identifying exchanges, trading platforms and
+  regulated or non-regulated markets as sources of prices and related information in
+  order to facilitate automated processing'.
 }
 \seealso{
 \itemize{

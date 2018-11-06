@@ -4,7 +4,7 @@
 \name{countries}
 \alias{countries}
 \title{ISOs for world countries.}
-\format{A data.table. Columns include:
+\format{A data.table with columns:
 \itemize{
   \item{name: country name. From United Nations sources (Terminology Bulletin Country
     Names and the Country and Region Codes for Statistical Use maintained by the United
@@ -21,7 +21,21 @@
 countries
 }
 \description{
-ISO 3166-1 country codes.
+The countries dataset corresponds to the ISO 3166-1 sub-standard,
+  part of the ISO 3166 standard published by the International Organization for
+  Standardization (ISO) that defines codes for the names of countries, dependent
+  territories, special areas of geographical interest, and their principal
+  subdivisions (e.g., provinces or states). The ISO 3166-1 sub-standard defines
+  three sets of country codes, all provided in the dataset:
+  \itemize{
+    \item{alpha-2: two-letter country codes (most widely used).}
+    \item{alpha-3: three-letter country codes. Allows for a better visual
+    association between the codes and the country names than the alpha-2 codes.}
+    \item{numeric: three-digit country codes. These are identical to those
+    developed and maintained by the United Nations Statistics Division, with the
+    advantage of script (writing system) independence, and hence useful for people
+    or systems using non-Latin scripts.}
+  }
 }
 \seealso{
 \code{storethat} package from the \code{finRes} universe.

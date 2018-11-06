@@ -19,13 +19,15 @@
 currencies
 }
 \description{
-ISO 4217 codes for worldwide currencies. Both alphabetic and numeric codes are provided.
-  The ISO 4217 three-letter alphabetic code standard is based on the ISO 3166 code standard for countries.
-  The first two letters of the ISO 4217 alphabetic code are the same as the code for the country name,
-  and where possible the third letter corresponds to the first letter of the currency name.
-  The ISO 4217 three-digit numeric code is useful when currency codes need to be understood in countries
-  that do not use Latin scripts and for computerised systems. Where possible the three-digit numeric code
-  is the same as the numeric ISO 3166 country code.
+The currencies dataset corresponds to the ISO 4217 standard published by the
+International Organization for Standardization (ISO) that defines codes for worldwide
+currencies and comes as a three-letter alphabetic as well as an alternative three-digit
+numeric code, both provided in the dataset. The ISO 4217 three-letter alphabetic code
+standard is based on the ISO 3166-1 code standard for countries with the first two letters
+corresponding the ISO 3166-1 alpha-2 code for the country issuing the corresponding
+currency and the third corresponding to the first letter of the currency name when possible.
+Where possible the three-digit numeric code is the same as the ISO 3166-1 numeric code
+for the issuing country.
 }
 \seealso{
 \itemize{

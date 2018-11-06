@@ -5,12 +5,8 @@ Authors@R: person("Olivier", "Bauthéac", email = "o.bautheac@gmail.com", role =
 Description: Collection of ISO code datasets conveniently packaged for consumption in R.
 Depends: R (>= 3.4.0)
 Imports: data.table (>= 1.11.4)
-Suggests:
-  pullit,
-  storethat
-Remotes: 
-  bautheac/pullit,
-  bautheac/storethat
+Suggests: finRes
+Remotes: bautheac/finRes
 License: CC0
 Encoding: UTF-8
 LazyData: no

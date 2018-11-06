@@ -1,0 +1,72 @@
+---
+title: fewISOs
+output: github_document
+always_allow_html: yes
+---
+
+[![Build Status](https://travis-ci.com/bautheac/fewISOs.svg?branch=master)](https://travis-ci.com/bautheac/fewISOs)
+[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/bautheac/fewISOs?branch=master&svg=true)](https://ci.appveyor.com/project/bautheac/fewISOs)
+[![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+
+<style> body {text-align: justify} </style>
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-"
+)
+```
+
+
+fewISOs provides a collection of financial economics related ISO code datasets conveniently packaged for consumption in R and can be installed from [github](https://github.com/bautheac/fewISOs/) using: `devtools::install_github("bautheac/fewISOs")`. Load the datasets with:
+
+```{r `load`}
+library(fewISOs)
+
+data(list = c("countries", "currencies", "exchanges"), package = "fewISOs")
+```
+
+
+
+### countries
+
+The countries dataset corresponds to the ISO 3166-1 sub-standard, part of the ISO 3166 standard published by the International Organization for Standardization (ISO) that defines codes for the names of countries, dependent territories, special areas of geographical interest, and their principal subdivisions (e.g., provinces or states). The ISO 3166-1 sub-standard defines three sets of country codes, all provided in the dataset:  
+    - ISO 3166-1 alpha-2: two-letter country codes (most widely used).  
+    - ISO 3166-1 alpha-3: three-letter country codes. Allows for a better visual association between the codes and the country names than the alpha-2 codes.  
+    - ISO 3166-1 numeric: three-digit country codes. These are identical to those developed and maintained by the United Nations Statistics Division, with the advantage of script (writing system) independence, and hence useful for people or systems using non-Latin scripts.  
+    
+Dataset excerpt:  
+```{r `countries`, echo = FALSE}
+head(countries)
+```
+
+
+### currencies
+
+The currencies dataset corresponds to the ISO 4217 standard that defines codes for worldwide currencies and comes as a three-letter alphabetic as well as an alternative three-digit numeric code, both provided in the dataset. The ISO 4217 three-letter alphabetic code standard is based on the ISO 3166-1 code standard for countries with the first two letters corresponding the ISO 3166-1 alpha-2 code for the country issuing the corresponding currency and the third corresponding to the first letter of the currency name when possible. Where possible the three-digit numeric code is the same as the ISO 3166-1 numeric code for the issuing country.
+
+Dataset excerpt:  
+```{r `currencies`, echo = FALSE}
+head(currencies)
+```
+
+
+### exchanges
+
+The exchanges dataset corresponds to the ISO 10383 standard that defines four alphanumeric character Market Identifier Codes (MIC). These are unique identification codes used to identify securities trading exchangestrading platforms and regulated or non-regulated markets as sources of prices and related information in order to facilitate automated processing
+
+Dataset excerpt:  
+```{r `exchanges`, echo = FALSE}
+tail(exchanges)
+```
+
+
+### finRes
+
+Although fewISOs is self-contained with consumption value on its own, it belongs to [finRes](https://bautheac.github.io/finRes/) where it plays an important role in providing support to [storethat](https://github.io/bautheac/storethat/) for facilitating data integrity.
+
+
+
