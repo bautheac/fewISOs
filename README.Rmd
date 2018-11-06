@@ -1,7 +1,6 @@
 ---
 title: fewISOs
 output: github_document
-always_allow_html: yes
 ---
 
 [![Build Status](https://travis-ci.com/bautheac/fewISOs.svg?branch=master)](https://travis-ci.com/bautheac/fewISOs)
@@ -20,7 +19,12 @@ knitr::opts_chunk$set(
 )
 ```
 
-
+  
+  
+## fewISOs  
+  
+  
+  
 fewISOs provides a collection of financial economics related ISO code datasets conveniently packaged for consumption in R and can be installed from [github](https://github.com/bautheac/fewISOs/) using: `devtools::install_github("bautheac/fewISOs")`. Load the datasets with:
 
 ```{r `load`}
