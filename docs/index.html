@@ -72,14 +72,11 @@
 <!-- README.md is generated from README.Rmd. Please edit that file --><div id="fewisos" class="section level2">
 <h2 class="hasAnchor">
 <a href="#fewisos" class="anchor"></a>fewISOs</h2>
-<p>fewISOs provides a collection of financial economics related ISO code datasets conveniently packaged for consumption in R and can be installed from <a href="https://github.com/bautheac/fewISOs/">github</a> using: <code><a href="http://www.rdocumentation.org/packages/devtools/topics/install_github">devtools::install_github("bautheac/fewISOs")</a></code>. Load the datasets with:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw">library</span>(fewISOs)</a>
-<a class="sourceLine" id="cb1-2" data-line-number="2"></a>
-<a class="sourceLine" id="cb1-3" data-line-number="3"><span class="kw">data</span>(<span class="dt">list =</span> <span class="kw">c</span>(<span class="st">"countries"</span>, <span class="st">"currencies"</span>, <span class="st">"exchanges"</span>), <span class="dt">package =</span> <span class="st">"fewISOs"</span>)</a></code></pre></div>
+<p>fewISOs provides a collection of financial economics related ISO code datasets conveniently packaged for consumption in R. It can be installed from <a href="https://github.com/bautheac/fewISOs/">github</a> using: <code><a href="http://www.rdocumentation.org/packages/devtools/topics/install_github">devtools::install_github("bautheac/fewISOs")</a></code>.</p>
 <div id="countries" class="section level3">
 <h3 class="hasAnchor">
 <a href="#countries" class="anchor"></a>countries</h3>
-<p>The countries dataset corresponds to the ISO 3166-1 sub-standard, part of the ISO 3166 standard published by the International Organization for Standardization (ISO) that defines codes for the names of countries, dependent territories, special areas of geographical interest, and their principal subdivisions (e.g., provinces or states). The ISO 3166-1 sub-standard defines three sets of country codes, all provided in the dataset:<br>
+<p>The countries dataset corresponds to the ISO 3166-1 sub-standard, part of the ISO 3166 standard published by the International Organization for Standardization (ISO) that defines codes for the names of countries, dependent territories, special areas of geographical interest, and their principal subdivisions (e.g., provinces or states). The sub-standard comes in three sets of country codes, all provided in the dataset:<br>
 - ISO 3166-1 alpha-2: two-letter country codes (most widely used).<br>
 - ISO 3166-1 alpha-3: three-letter country codes. Allows for a better visual association between the codes and the country names than the alpha-2 codes.<br>
 - ISO 3166-1 numeric: three-digit country codes. These are identical to those developed and maintained by the United Nations Statistics Division, with the advantage of script (writing system) independence, and hence useful for people or systems using non-Latin scripts.</p>
@@ -95,7 +92,7 @@
 <div id="currencies" class="section level3">
 <h3 class="hasAnchor">
 <a href="#currencies" class="anchor"></a>currencies</h3>
-<p>The currencies dataset corresponds to the ISO 4217 standard that defines codes for worldwide currencies and comes as a three-letter alphabetic as well as an alternative three-digit numeric code, both provided in the dataset. The ISO 4217 three-letter alphabetic code standard is based on the ISO 3166-1 code standard for countries with the first two letters corresponding the ISO 3166-1 alpha-2 code for the country issuing the corresponding currency and the third corresponding to the first letter of the currency name when possible. Where possible the three-digit numeric code is the same as the ISO 3166-1 numeric code for the issuing country.</p>
+<p>The currencies dataset corresponds to the ISO 4217 standard that defines codes for worldwide currencies and comes as a three-letter alphabetic as well as an alternative three-digit numeric code, both provided in the dataset. The ISO 4217 three-letter alphabetic code standard is based on the ISO 3166-1 code standard for countries with the first two letters corresponding the ISO 3166-1 alpha-2 code for the country issuing the corresponding currency and the third corresponding to the first letter of the currency name when possible. The three-digit numeric code is the same as the ISO 3166-1 numeric code for the issuing country when possible.</p>
 <p>Dataset excerpt:</p>
 <pre><code>#&gt;                            name alphabetic numeric minor unit country
 #&gt; 1                    UAE Dirham        AED     784          2      AE
@@ -108,7 +105,7 @@
 <div id="exchanges" class="section level3">
 <h3 class="hasAnchor">
 <a href="#exchanges" class="anchor"></a>exchanges</h3>
-<p>The exchanges dataset corresponds to the ISO 10383 standard that defines four alphanumeric character Market Identifier Codes (MIC). These are unique identification codes used to identify securities trading exchangestrading platforms and regulated or non-regulated markets as sources of prices and related information in order to facilitate automated processing</p>
+<p>The exchanges dataset corresponds to the ISO 10383 standard that defines four alphanumeric character Market Identifier Codes (MIC). These are unique identification codes used to identify securities trading exchanges, trading platforms and regulated or non-regulated markets as sources of prices and related information in order to facilitate automated processing</p>
 <p>Dataset excerpt:</p>
 <pre><code>#&gt;                                               name  MIC country
 #&gt; 1664                                    assent ats AATS      US

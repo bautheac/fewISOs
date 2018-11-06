@@ -14,15 +14,9 @@ Status](https://ci.appveyor.com/api/projects/status/github/bautheac/fewISOs?bran
 ## fewISOs
 
 fewISOs provides a collection of financial economics related ISO code
-datasets conveniently packaged for consumption in R and can be installed
+datasets conveniently packaged for consumption in R. It can be installed
 from [github](https://github.com/bautheac/fewISOs/) using:
-`devtools::install_github("bautheac/fewISOs")`. Load the datasets with:
-
-``` r
-library(fewISOs)
-
-data(list = c("countries", "currencies", "exchanges"), package = "fewISOs")
-```
+`devtools::install_github("bautheac/fewISOs")`.
 
 ### countries
 
@@ -30,9 +24,8 @@ The countries dataset corresponds to the ISO 3166-1 sub-standard, part
 of the ISO 3166 standard published by the International Organization for
 Standardization (ISO) that defines codes for the names of countries,
 dependent territories, special areas of geographical interest, and their
-principal subdivisions (e.g., provinces or states). The ISO 3166-1
-sub-standard defines three sets of country codes, all provided in the
-dataset:  
+principal subdivisions (e.g., provinces or states). The sub-standard
+comes in three sets of country codes, all provided in the dataset:  
 \- ISO 3166-1 alpha-2: two-letter country codes (most widely used).  
 \- ISO 3166-1 alpha-3: three-letter country codes. Allows for a better
 visual association between the codes and the country names than the
@@ -61,9 +54,9 @@ dataset. The ISO 4217 three-letter alphabetic code standard is based on
 the ISO 3166-1 code standard for countries with the first two letters
 corresponding the ISO 3166-1 alpha-2 code for the country issuing the
 corresponding currency and the third corresponding to the first letter
-of the currency name when possible. Where possible the three-digit
-numeric code is the same as the ISO 3166-1 numeric code for the issuing
-country.
+of the currency name when possible. The three-digit numeric code is the
+same as the ISO 3166-1 numeric code for the issuing country when
+possible.
 
 Dataset
     excerpt:
@@ -81,7 +74,7 @@ Dataset
 The exchanges dataset corresponds to the ISO 10383 standard that defines
 four alphanumeric character Market Identifier Codes (MIC). These are
 unique identification codes used to identify securities trading
-exchangestrading platforms and regulated or non-regulated markets as
+exchanges, trading platforms and regulated or non-regulated markets as
 sources of prices and related information in order to facilitate
 automated processing
 
