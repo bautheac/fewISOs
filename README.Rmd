@@ -12,27 +12,17 @@ output: github_document
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
 ```{r, echo = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>",
-  fig.path = "README-"
-)
+library(fewISOs)
+
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>", fig.path = "README-")
+data(list = c("countries", "currencies", "exchanges"), package = "fewISOs")
 ```
 
   
   
 ## fewISOs  
   
-  
-  
-fewISOs provides a collection of financial economics related ISO code datasets conveniently packaged for consumption in R. It can be installed from [github](https://github.com/bautheac/fewISOs/) using: `devtools::install_github("bautheac/fewISOs")`.
-
-```{r `load`, include = FALSE}
-library(fewISOs)
-
-data(list = c("countries", "currencies", "exchanges"), package = "fewISOs")
-```
-
+fewISOs provides a collection of financial economics related ISO code datasets conveniently packaged for consumption in R. It can be installed from [github](https://github.com/bautheac/fewISOs/) using: `devtools::install_github("bautheac/fewISOs")`.  
 
 
 ### countries
