@@ -14,9 +14,9 @@ Status](https://ci.appveyor.com/api/projects/status/github/bautheac/fewISOs?bran
 ## fewISOs
 
 fewISOs provides a collection of financial economics related ISO code
-datasets conveniently packaged for consumption in R. It can be installed
-from [github](https://github.com/bautheac/fewISOs/) using:
-`devtools::install_github("bautheac/fewISOs")`.
+datasets conveniently packaged for consumption in R. Install the
+development version from [github](https://github.com/bautheac/fewISOs/)
+using: `devtools::install_github("bautheac/fewISOs")`.
 
 ### countries
 
@@ -76,7 +76,7 @@ four alphanumeric character Market Identifier Codes (MIC). These are
 unique identification codes used to identify securities trading
 exchanges, trading platforms and regulated or non-regulated markets as
 sources of prices and related information in order to facilitate
-automated processing
+automated processing.
 
 Dataset excerpt:
 
@@ -98,7 +98,5 @@ Dataset excerpt:
 ### finRes
 
 Although fewISOs is self-contained with consumption value on its own, it
-belongs to [finRes](https://bautheac.github.io/finRes/) where it plays
-an important role in providing support to
-[storethat](https://github.io/bautheac/storethat/) for facilitating data
-integrity.
+belongs to [finRes](https://bautheac.github.io/finRes/) where it helps
+with data wrangling and exploration.

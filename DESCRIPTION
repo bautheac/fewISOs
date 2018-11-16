@@ -2,7 +2,7 @@ Package: fewISOs
 Title: A few ISO code datasets
 Version: 0.0.1.0
 Authors@R: person("Olivier", "Bauthéac", email = "o.bautheac@gmail.com", role = c("aut", "cre"))
-Description: Collection of ISO code datasets conveniently packaged for consumption in R.
+Description: A collection of financial economics related ISO code datasets conveniently packaged for consumption in R.
 URL: https://bautheac.github.io/fewISOs
 BugReports: https://github.com/bautheac/fewISOs/issues
 Depends: R (>= 3.4.0)
