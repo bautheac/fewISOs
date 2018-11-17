@@ -1,0 +1,19 @@
+title: fewISOs
+
+url: https://bautheac.github.io/fewISOs
+
+reference:
+  - title: A few ISO code datasets
+    contents:
+      - countries
+      - currencies
+      - exchanges
+
+navbar:
+  title: ~
+  type: default
+  left:
+    - text: home
+      href: index.html
+    - text: datasets
+      href: reference/index.html
