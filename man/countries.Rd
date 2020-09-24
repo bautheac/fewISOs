@@ -4,7 +4,8 @@
 \name{countries}
 \alias{countries}
 \title{ISOs for world countries.}
-\format{A data.table with columns:
+\format{
+A data.table with columns:
 \itemize{
   \item{name: country name. From United Nations sources (Terminology Bulletin Country
     Names and the Country and Region Codes for Statistical Use maintained by the United
@@ -13,7 +14,8 @@
   \item{alpha 3: ISO 3166-1 three-letter alphabetic code.}
   \item{numeric: ISO 3166-1 three-digit numeric code.}
   \item{capital: country's capital city.}
-}}
+}
+}
 \source{
 \url{http://www.iso.org/iso-3166-country-codes.html}.
 }

@@ -4,14 +4,16 @@
 \name{exchanges}
 \alias{exchanges}
 \title{ISOs for worldwide financial exchanges.}
-\format{A data.table. Columns include:
+\format{
+A data.table. Columns include:
 \itemize{
   \item{name: institution name.}
   \item{MIC: ISO 10383 Market Identification Code.}
   \item{country: country where the exchange sits. ISO 3166-1 - aplha 2 code.}
   \item{city: city where the exchange sits.}
   \item{website: institution's website.}
-}}
+}
+}
 \source{
 \url{http://www.iso20022.org}.
 }

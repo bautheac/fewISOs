@@ -1,24 +1,18 @@
 fewISOs
 ================
 
-[![Build
-Status](https://travis-ci.com/bautheac/fewISOs.svg?branch=master)](https://travis-ci.com/bautheac/fewISOs)
-[![AppVeyor Build
-Status](https://ci.appveyor.com/api/projects/status/github/bautheac/fewISOs?branch=master&svg=true)](https://ci.appveyor.com/project/bautheac/fewISOs)
 [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 
 <style> body {text-align: justify} </style>
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-## fewISOs
-
 fewISOs provides a collection of financial economics related ISO code
 datasets conveniently packaged for consumption in R. Install the
 development version from [github](https://github.com/bautheac/fewISOs/)
 using: `devtools::install_github("bautheac/fewISOs")`.
 
-### countries
+### Countries
 
 The countries dataset corresponds to the ISO 3166-1 sub-standard, part
 of the ISO 3166 standard published by the International Organization for
@@ -45,7 +39,7 @@ Dataset excerpt:
     #> 5 American Samoa      AS     ASM     016        Pago Pago
     #> 6        Andorra      AD     AND     020 Andorra la Vella
 
-### currencies
+### Currencies
 
 The currencies dataset corresponds to the ISO 4217 standard that defines
 codes for worldwide currencies and comes as a three-letter alphabetic as
@@ -58,8 +52,7 @@ of the currency name when possible. The three-digit numeric code is the
 same as the ISO 3166-1 numeric code for the issuing country when
 possible.
 
-Dataset
-    excerpt:
+Dataset excerpt:
 
     #>                            name alphabetic numeric minor unit country
     #> 1                    UAE Dirham        AED     784          2      AE
@@ -69,7 +62,7 @@ Dataset
     #> 5 Netherlands Antillean Guilder        ANG     532          2      CW
     #> 6                        Kwanza        AOA     973          2      AO
 
-### exchanges
+### Exchanges
 
 The exchanges dataset corresponds to the ISO 10383 standard that defines
 four alphanumeric character Market Identifier Codes (MIC). These are
@@ -80,20 +73,20 @@ automated processing.
 
 Dataset excerpt:
 
-    #>                                               name  MIC country
-    #> 1664                                    assent ats AATS      US
-    #> 1665                         athens exchange - apa AAPA      GR
-    #> 1666 credit agricole cib - systematic internaliser AACA      FR
-    #> 1667                                           a2x A2XX      ZA
-    #> 1668                                          360t 360T      DE
-    #> 1669             ssy futures ltd -  freight screen 3579      GB
-    #>              city           website
-    #> 1664  Jersey City   www.sungard.com
-    #> 1665       Athens www.athexgroup.gr
-    #> 1666        Paris    www.ca-cib.com
-    #> 1667 Johannesburg     www.a2x.co.za
-    #> 1668    Frankfurt      www.360t.com
-    #> 1669       London www.ssyonline.com
+    #>                                               name  MIC country         city
+    #> 1664                                    assent ats AATS      US  Jersey City
+    #> 1665                         athens exchange - apa AAPA      GR       Athens
+    #> 1666 credit agricole cib - systematic internaliser AACA      FR        Paris
+    #> 1667                                           a2x A2XX      ZA Johannesburg
+    #> 1668                                          360t 360T      DE    Frankfurt
+    #> 1669             ssy futures ltd -  freight screen 3579      GB       London
+    #>                website
+    #> 1664   www.sungard.com
+    #> 1665 www.athexgroup.gr
+    #> 1666    www.ca-cib.com
+    #> 1667     www.a2x.co.za
+    #> 1668      www.360t.com
+    #> 1669 www.ssyonline.com
 
 ### finRes
 

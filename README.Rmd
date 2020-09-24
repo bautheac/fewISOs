@@ -3,8 +3,6 @@ title: fewISOs
 output: github_document
 ---
 
-[![Build Status](https://travis-ci.com/bautheac/fewISOs.svg?branch=master)](https://travis-ci.com/bautheac/fewISOs)
-[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/bautheac/fewISOs?branch=master&svg=true)](https://ci.appveyor.com/project/bautheac/fewISOs)
 [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 
 <style> body {text-align: justify} </style>
@@ -19,13 +17,10 @@ data(list = c("countries", "currencies", "exchanges"), package = "fewISOs")
 ```
 
   
-  
-## fewISOs  
-  
 fewISOs provides a collection of financial economics related ISO code datasets conveniently packaged for consumption in R. Install the development version from [github](https://github.com/bautheac/fewISOs/) using: `devtools::install_github("bautheac/fewISOs")`.  
 
 
-### countries
+### Countries
 
 The countries dataset corresponds to the ISO 3166-1 sub-standard, part of the ISO 3166 standard published by the International Organization for Standardization (ISO) that defines codes for the names of countries, dependent territories, special areas of geographical interest, and their principal subdivisions (e.g., provinces or states). The sub-standard comes in three sets of country codes, all provided in the dataset:  
   - ISO 3166-1 alpha-2: two-letter country codes (most widely used).  
@@ -38,7 +33,7 @@ head(countries)
 ```
 
 
-### currencies
+### Currencies
 
 The currencies dataset corresponds to the ISO 4217 standard that defines codes for worldwide currencies and comes as a three-letter alphabetic as well as an alternative three-digit numeric code, both provided in the dataset. The ISO 4217 three-letter alphabetic code standard is based on the ISO 3166-1 code standard for countries with the first two letters corresponding the ISO 3166-1 alpha-2 code for the country issuing the corresponding currency and the third corresponding to the first letter of the currency name when possible. The three-digit numeric code is the same as the ISO 3166-1 numeric code for the issuing country when possible.
 
@@ -48,7 +43,7 @@ head(currencies)
 ```
 
 
-### exchanges
+### Exchanges
 
 The exchanges dataset corresponds to the ISO 10383 standard that defines four alphanumeric character Market Identifier Codes (MIC). These are unique identification codes used to identify securities trading exchanges, trading platforms and regulated or non-regulated markets as sources of prices and related information in order to facilitate automated processing.  
 

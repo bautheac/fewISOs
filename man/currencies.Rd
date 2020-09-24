@@ -4,14 +4,16 @@
 \name{currencies}
 \alias{currencies}
 \title{ISOs for worldwide currencies.}
-\format{A data.table. Columns include:
+\format{
+A data.table. Columns include:
 \itemize{
   \item{name: currency name.}
   \item{alphabetic: ISO 4217 three-letter alphabetic code.}
   \item{numeric: ISO 4217 three-digit numeric code.}
   \item{minor unit: number of digits after the decimal separator.}
   \item{country: country where the currency is issued. ISO 3166-1 - aplha 2 code.}
-}}
+}
+}
 \source{
 \url{http://www.iso.org/iso-4217-currency-codes.html}.
 }
