@@ -1,4 +1,4 @@
-#' ISOs for worldwide financial exchanges.
+#' ISO codes for worldwide financial exchanges.
 #'
 #' @description The Market Identifier Code (MIC) is a unique identification code used to
 #'   identify securities trading exchanges. I's a four alphanumeric character code, and
@@ -25,7 +25,7 @@
 #'
 "exchanges"
 
-#' ISOs for world countries.
+#' ISO codes for world countries.
 #'
 #' @description The countries dataset corresponds to the ISO 3166-1 sub-standard,
 #'   part of the ISO 3166 standard published by the International Organization for
@@ -59,7 +59,7 @@
 #'
 "countries"
 
-#' ISOs for worldwide currencies.
+#' ISO codes for worldwide currencies.
 #'
 #' @description The currencies dataset corresponds to the ISO 4217 standard published by the
 #' International Organization for Standardization (ISO) that defines codes for worldwide

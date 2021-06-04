@@ -3,7 +3,7 @@
 \docType{data}
 \name{countries}
 \alias{countries}
-\title{ISOs for world countries.}
+\title{ISO codes for world countries.}
 \format{
 A data.table with columns:
 \itemize{

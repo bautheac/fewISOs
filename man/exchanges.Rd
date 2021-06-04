@@ -3,7 +3,7 @@
 \docType{data}
 \name{exchanges}
 \alias{exchanges}
-\title{ISOs for worldwide financial exchanges.}
+\title{ISO codes for worldwide financial exchanges.}
 \format{
 A data.table. Columns include:
 \itemize{

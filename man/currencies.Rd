@@ -3,7 +3,7 @@
 \docType{data}
 \name{currencies}
 \alias{currencies}
-\title{ISOs for worldwide currencies.}
+\title{ISO codes for worldwide currencies.}
 \format{
 A data.table. Columns include:
 \itemize{
