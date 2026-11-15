@@ -3,7 +3,7 @@ Title: A few ISO code datasets
 Version: 0.0.1.0
 Authors@R: person("Olivier", "Bauthéac", email = "o.bautheac@gmail.com", role = c("aut", "cre"))
 Description: A collection of financial economics related ISO code datasets conveniently packaged for consumption in R.
-URL: https://bautheac.github.io/fewISOs
+URL: https://dev.bautheac.net/fewISOs
 BugReports: https://github.com/bautheac/fewISOs/issues
 Depends: R (>= 3.4.0)
 Imports: data.table (>= 1.11.4)
