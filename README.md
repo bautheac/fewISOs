@@ -102,5 +102,5 @@ head(exchanges)
 
 Although [fewISOs](https://github.com/bautheac/fewISOs/) is
 self-contained it belongs to the
-[finRes](https://bautheac.github.io/finRes/) suite of packages where it
+[finRes](https://dev.bautheac.net/finRes/) suite of packages where it
 helps with data wrangling and analysis.
