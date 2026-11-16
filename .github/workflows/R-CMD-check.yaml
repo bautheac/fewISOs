@@ -1,0 +1,48 @@
+name: R-CMD-check
+
+on:
+  pull_request:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  R-CMD-check:
+    # Keep forked pull-request code off the privileged homelab runners.
+    runs-on: >-
+      ${{ fromJSON(case(
+        github.event_name == 'pull_request' &&
+        github.event.pull_request.head.repo.full_name != github.repository,
+        '"ubuntu-latest"',
+        '["self-hosted", "Linux", "X64"]'
+      )) }}
+
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+      R_KEEP_PKG_SOURCE: yes
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: release
+          use-public-rspm: true
+
+      - uses: r-lib/actions/setup-r-dependencies@v2
+        # See pkgdown.yaml: a cache under the job's temp folder keeps a stale
+        # build of a GitHub suite package from an earlier job out.
+        env:
+          R_PKG_CACHE_DIR: ${{ runner.temp }}/pkgcache
+        with:
+          extra-packages: any::rcmdcheck
+          needs: check
+
+      - uses: r-lib/actions/check-r-package@v2
