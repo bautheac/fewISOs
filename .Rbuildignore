@@ -10,3 +10,4 @@
 ^README-.*\.png$
 ^pkgdown-site$
 ^\.github$
+^pkgdown$

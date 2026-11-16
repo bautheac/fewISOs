@@ -1,6 +1,12 @@
-title: fewISOs
-
 url: https://dev.bautheac.net/fewISOs
+destination: pkgdown-site
+template:
+  bootstrap: 5
+  bslib:
+    base_font: {google: "Source Sans Pro"}
+    heading_font: {google: "Source Sans Pro"}
+    code_font: {google: "Source Code Pro"}
+    font-size-base: 1.25rem
 
 reference:
   - title: A few ISO code datasets
@@ -8,12 +14,3 @@ reference:
       - countries
       - currencies
       - exchanges
-
-navbar:
-  title: ~
-  type: default
-  left:
-    - text: home
-      href: index.html
-    - text: datasets
-      href: reference/index.html
