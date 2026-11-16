@@ -1,4 +1,6 @@
 .Rproj.user
 .Rhistory
 .RData
-data-raw/
+data-raw/*
+!data-raw/logo.py
+pkgdown-site/
