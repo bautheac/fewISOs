@@ -15,14 +15,10 @@ permissions:
 
 jobs:
   R-CMD-check:
-    # Keep forked pull-request code off the privileged homelab runners.
-    runs-on: >-
-      ${{ fromJSON(case(
-        github.event_name == 'pull_request' &&
-        github.event.pull_request.head.repo.full_name != github.repository,
-        '"ubuntu-latest"',
-        '["self-hosted", "Linux", "X64"]'
-      )) }}
+    # finRes (Suggests, from Remotes) installs FFresearch from source, which
+    # needs about 4.5 GB and is OOM-killed on the 6 GiB CI VMs, so the check
+    # runs on a GitHub-hosted runner.
+    runs-on: ubuntu-latest
 
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
@@ -37,10 +33,6 @@ jobs:
           use-public-rspm: true
 
       - uses: r-lib/actions/setup-r-dependencies@v2
-        # See pkgdown.yaml: a cache under the job's temp folder keeps a stale
-        # build of a GitHub suite package from an earlier job out.
-        env:
-          R_PKG_CACHE_DIR: ${{ runner.temp }}/pkgcache
         with:
           extra-packages: any::rcmdcheck
           needs: check
